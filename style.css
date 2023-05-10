@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Inter:wght@400;700&family=Montserrat:wght@700&family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Work+Sans&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.title{
+    text-align: center;
+    padding-bottom: 5px;
+}
+img {
+    width: 100px;
+    height: 67px;
+}
+
+#country-container {
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    /* grid-auto-rows: auto; */
+
+    grid-gap: 15px;
+}
+
+.show {
+    padding: 10px;
+    text-align: center;
+}
+
+/* responsive media queries */
+/* Styles for screens larger than or equal to 1200px */
+@media (min-width: 1200px) {
+    #country-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+  }
+  
+  /* Styles for screens between 992px and 1199px */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #country-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+  
+  /* Styles for screens between 768px and 991px */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #country-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  /* Styles for screens smaller than 768px */
+  @media (max-width: 767px) {
+
+    #country-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
